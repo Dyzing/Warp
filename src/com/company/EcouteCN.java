@@ -62,17 +62,17 @@ public class EcouteCN extends Service implements EcouteInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDECN1);
-                System.out.print("Coloknee : ");
+                System.out.print("_Coloknee : ");
                 System.out.println(Constantes.CONSEILCN1);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDECN2);
-                System.out.print("Coloknee : ");
+                System.out.print("_Coloknee : ");
                 System.out.println(Constantes.CONSEILCN2);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDECN3);
-                System.out.print("Coloknee : ");
+                System.out.print("_Coloknee : ");
                 System.out.println(Constantes.CONSEILCN3);
                 break;
             default:

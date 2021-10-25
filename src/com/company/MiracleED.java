@@ -11,15 +11,15 @@ public class MiracleED extends Service implements MiracleInterface{
 
         switch (random_value) {
             case 1:
-                System.out.print("Empereur-Dieu : ");
+                System.out.print("_Empereur-Dieu : ");
                 System.out.println(Constantes.MIRACLEED1);
                 break;
             case 2:
-                System.out.print("Empereur-Dieu : ");
+                System.out.print("_Empereur-Dieu : ");
                 System.out.println(Constantes.MIRACLEED2);
                 break;
             case 3:
-                System.out.print("Empereur-Dieu : ");
+                System.out.print("_Empereur-Dieu : ");
                 System.out.println(Constantes.MIRACLEED3);
                 break;
             default:

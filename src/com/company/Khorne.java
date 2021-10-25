@@ -62,7 +62,7 @@ public class Khorne {
                 }
                 break;
             case 2: //ECOUTE
-                System.out.println("- ECOUTE : ");
+                System.out.println("ECOUTE : ");
                 random_tache = random.nextInt(3) + 1;
                 switch (random_tache) {
                     case 1:
@@ -79,11 +79,11 @@ public class Khorne {
                 }
                 break;
             case 3: //MIRACLE
-                System.out.println("- MIRACLE : ");
+                System.out.println("MIRACLE : ");
                 ((MiracleKH) chaos.communiquerKH().getMiracleKH()).RealiserMiracle();
                 break;
             case 4: //CATACLYSME
-                System.out.println("- CATACLYSME : ");
+                System.out.println("CATACLYSME : ");
                 random_tache = random.nextInt(3) + 1;
                 switch (random_tache) {
                     case 1:

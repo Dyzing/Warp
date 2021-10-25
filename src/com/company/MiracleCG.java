@@ -10,15 +10,15 @@ public class MiracleCG extends Service implements MiracleInterface{
 
         switch (random_value) {
             case 1:
-                System.out.print("Cegorach : ");
+                System.out.print("_Cegorach : ");
                 System.out.println(Constantes.MIRACLECG1);
                 break;
             case 2:
-                System.out.print("Cegorach : ");
+                System.out.print("_Cegorach : ");
                 System.out.println(Constantes.MIRACLECG2);
                 break;
             case 3:
-                System.out.print("Cegorach : ");
+                System.out.print("_Cegorach : ");
                 System.out.println(Constantes.MIRACLECG3);
                 break;
             default:
