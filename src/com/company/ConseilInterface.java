@@ -3,6 +3,6 @@ package com.company;
 public interface ConseilInterface {
 
     void conseilSansRaison();
-    void conseilFonctionDemande();
+    void conseilFonctionDemande(String demande);
 
 }
