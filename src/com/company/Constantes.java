@@ -14,9 +14,9 @@ public class Constantes {
     public static final String CONSEILKH2 = "Agent du chaos je te conseille d'aller conquérir de nouveaux territoires";
     public static final String CONSEILKH3 = "Agent du chaos je te conseille d'aller explorer de nouvelles terres";
 
-    public static final String CONSEILCN1 = "Farfadet de te consielle de travailler tes exams";
-    public static final String CONSEILCN2 = "Farfadet de te consielle de boire ce verre cul sec";
-    public static final String CONSEILCN3 = "Farfadet de te consielle d'aller au bar a python";
+    public static final String CONSEILCN1 = "Farfadet de te conseille de travailler tes exams";
+    public static final String CONSEILCN2 = "Farfadet de te conseille de boire ce verre cul sec";
+    public static final String CONSEILCN3 = "Farfadet de te conseille d'aller au bar a python";
 
 
     ///
@@ -106,6 +106,6 @@ public class Constantes {
     public static final String DEMANDECN6 = "Oh grand dieu de la coloknee, provoque une aurore boréale destructrice";
     public static final String DEMANDECN7 = "Oh grand dieu de la coloknee, range notre vaisselle !";
     public static final String DEMANDECN8 = "Oh grand dieu de la coloknee, fait notre ménage !";
-    public static final String DEMANDECN9 = "Oh grand dieu de la coloknee, paye notre !";
+    public static final String DEMANDECN9 = "Oh grand dieu de la coloknee, paye notre loyer !";
     
 }

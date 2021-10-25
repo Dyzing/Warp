@@ -7,10 +7,14 @@ import java.util.TimerTask;
 public class Warp {
 
     private static Warp instance_warp = null;
+
     Service [] tabServiceED; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
     EmpereurDieu ed;
     Service [] tabServiceCG; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
     Cegorach cg;
+
+    Service [] tabServiceCN; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
+    Coloknee cn;
 
     public Warp()
     {
