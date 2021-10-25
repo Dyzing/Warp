@@ -12,14 +12,17 @@ public class EcouteCG extends Service implements EcouteInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDECG7);
+                System.out.print("-Cegorach : ");
                 System.out.println(Constantes.MIRACLECG1);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDECG8);
+                System.out.print("-Cegorach : ");
                 System.out.println(Constantes.MIRACLECG2);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDECG9);
+                System.out.print("-Cegorach : ");
                 System.out.println(Constantes.MIRACLECG3);
                 break;
             default:
@@ -35,14 +38,17 @@ public class EcouteCG extends Service implements EcouteInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDECG1);
+                System.out.print("-Cegorach : ");
                 System.out.println(Constantes.ECOUTECG);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDEED5);
+                System.out.print("-Cegorach : ");
                 System.out.println(Constantes.ECOUTECG);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDEED9);
+                System.out.print("-Cegorach : ");
                 System.out.println(Constantes.ECOUTECG);
                 break;
             default:
@@ -57,14 +63,17 @@ public class EcouteCG extends Service implements EcouteInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDECG1);
+                System.out.print("-Cegorach : ");
                 System.out.println(Constantes.CONSEILCG1);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDECG2);
+                System.out.print("-Cegorach : ");
                 System.out.println(Constantes.CONSEILCG2);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDECG3);
+                System.out.print("-Cegorach : ");
                 System.out.println(Constantes.CONSEILCG3);
                 break;
             default:
