@@ -73,9 +73,8 @@ public class Warp {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-                EmpereurDieu ed = EmpereurDieu.getInstance();
-                System.out.println("--------------------------------------------------");
-                System.out.print("-Psykers : ");
+                System.out.println("-----------------------------------------------------------\n");
+                System.out.print("Psykers : ");
                 ed.runED();
                 System.out.print("-Harlequins : ");
                 cg.runCG();
@@ -84,7 +83,8 @@ public class Warp {
                 System.out.print("-Farfadets : ");
                 cn.runCN();
                 System.out.println("");
-                System.out.println("--------------------------------------------------");
+
+                System.out.print("-------------------------------------------------------------");
             }
         };
         timer.scheduleAtFixedRate(task, 0,2000);//wait 0 ms before doing the action and do it every 1000ms (1second)
