@@ -10,12 +10,15 @@ public class CataclysmeCG extends Service implements CataclysmeInterface{
 
         switch (random_value) {
             case 1:
+                System.out.print("Cegorach : ");
                 System.out.println(Constantes.CATACLYSMECG1);
                 break;
             case 2:
+                System.out.print("Cegorach : ");
                 System.out.println(Constantes.CATACLYSMECG2);
                 break;
             case 3:
+                System.out.print("Cegorach : ");
                 System.out.println(Constantes.CATACLYSMECG3);
                 break;
             default:
@@ -31,14 +34,17 @@ public class CataclysmeCG extends Service implements CataclysmeInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDECG4);
+                System.out.print("Cegorach : ");
                 System.out.println(Constantes.CATACLYSMECG1);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDECG5);
+                System.out.print("Cegorach : ");
                 System.out.println(Constantes.CATACLYSMECG2);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDECG6);
+                System.out.print("Cegorach : ");
                 System.out.println(Constantes.CATACLYSMECG3);
                 break;
             default:
@@ -54,14 +60,17 @@ public class CataclysmeCG extends Service implements CataclysmeInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.CATACLYSMECG1);
+                System.out.print("Cegorach : ");
                 System.out.println(Constantes.MIRACLECG1);
                 break;
             case 2:
                 System.out.println(Constantes.CATACLYSMECG2);
+                System.out.print("Cegorach : ");
                 System.out.println(Constantes.MIRACLECG2);
                 break;
             case 3:
                 System.out.println(Constantes.CATACLYSMECG3);
+                System.out.print("Cegorach : ");
                 System.out.println(Constantes.MIRACLECG3);
                 break;
             default:
