@@ -7,6 +7,5 @@ public abstract class ConseilED extends Service implements ConseilInterface {
     public void conseilSansRaison() {
 
 
-
     }
 }
