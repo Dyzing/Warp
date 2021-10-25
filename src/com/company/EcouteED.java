@@ -13,17 +13,17 @@ public class EcouteED extends Service implements EcouteInterface {
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDEED7);
-                System.out.print("Empereur-Dieu : ");
+                System.out.print("-Empereur-Dieu : ");
                 System.out.println(Constantes.MIRACLEED1);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDEED8);
-                System.out.print("Empereur-Dieu : ");
+                System.out.print("-Empereur-Dieu : ");
                 System.out.println(Constantes.MIRACLEED2);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDEED9);
-                System.out.print("Empereur-Dieu : ");
+                System.out.print("-Empereur-Dieu : ");
                 System.out.println(Constantes.MIRACLEED3);
                 break;
             default:
@@ -39,17 +39,17 @@ public class EcouteED extends Service implements EcouteInterface {
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDEED1);
-                System.out.print("Empereur-Dieu : ");
+                System.out.print("-Empereur-Dieu : ");
                 System.out.println(Constantes.ECOUTEED);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDEED5);
-                System.out.print("Empereur-Dieu : ");
+                System.out.print("-Empereur-Dieu : ");
                 System.out.println(Constantes.ECOUTEED);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDEED9);
-                System.out.print("Empereur-Dieu : ");
+                System.out.print("-Empereur-Dieu : ");
                 System.out.println(Constantes.ECOUTEED);
                 break;
             default:
@@ -64,17 +64,17 @@ public class EcouteED extends Service implements EcouteInterface {
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDEED1);
-                System.out.print("_Empereur-Dieu : ");
+                System.out.print("-Empereur-Dieu : ");
                 System.out.println(Constantes.CONSEILED1);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDEED2);
-                System.out.print("_Empereur-Dieu : ");
+                System.out.print("-Empereur-Dieu : ");
                 System.out.println(Constantes.CONSEILED2);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDEED3);
-                System.out.print("_Empereur-Dieu : ");
+                System.out.print("-Empereur-Dieu : ");
                 System.out.println(Constantes.CONSEILED3);
                 break;
             default:

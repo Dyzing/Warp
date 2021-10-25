@@ -10,15 +10,15 @@ public class MiracleCN extends Service implements  MiracleInterface{
 
         switch (random_value) {
             case 1:
-                System.out.print("_Coloknee : ");
+                System.out.print("-Coloknee : ");
                 System.out.println(Constantes.MIRACLECN1);
                 break;
             case 2:
-                System.out.print("_Coloknee : ");
+                System.out.print("-Coloknee : ");
                 System.out.println(Constantes.MIRACLECN2);
                 break;
             case 3:
-                System.out.print("_Coloknee : ");
+                System.out.print("-Coloknee : ");
                 System.out.println(Constantes.MIRACLECN3);
                 break;
             default:
