@@ -8,6 +8,9 @@ public class Constantes {
 
     public static final String ECOUTEED = "L'Empereur-Dieu a ecouté";
 
+    public static final String CATACLYSMEED1 = "Super Nova destructice ";
+    public static final String CATACLYSMEED2 = "Eruption solaire";
+    public static final String CATACLYSMEED3 = "Pluie d'asteroïdes";
 
     public static final String MIRACLEED1 = "Soigne tous les Psykers au combat";
     public static final String MIRACLEED2 = "Donne de la force tous les Psykers au combat";
