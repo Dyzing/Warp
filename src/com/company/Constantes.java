@@ -54,8 +54,8 @@ public class Constantes {
     public static final String MIRACLEED3 = "Enrichis tous les Psykers";
 
     public static final String MIRACLECG1 = "Enrichis tous les Harlequins";
-    public static final String MIRACLECG2 = "Réalise le rêve du Harlequins";
-    public static final String MIRACLECG3 = "Récoltes agrcioles abondantes";
+    public static final String MIRACLECG2 = "Récoltes agrcioles abondantes";
+    public static final String MIRACLECG3 = "Réalise le rêve du Harlequins";
 
     public static final String MIRACLEKH1 = "Detruit l'armée adverse";
     public static final String MIRACLEKH2 = "Rends les combattants immortels";
@@ -64,7 +64,6 @@ public class Constantes {
     public static final String MIRACLECN1 = "Vaisselle de la cuisine rangée";
     public static final String MIRACLECN2 = "Rangement complet de la colloc";
     public static final String MIRACLECN3 = "Loyer payé";
-
 
     ///
 

@@ -25,7 +25,7 @@ public class Khorne {
     }
 
     public Service getConseilKH() {
-        return ((ConseilKH) Warp.getInstance().tabServiceED[0]);
+        return ((ConseilKH) Warp.getInstance().tabServiceKH[0]);
     }
 
     public Service getEcouteKH() {
@@ -41,76 +41,67 @@ public class Khorne {
     }
 
     public void runKH() {
-        Timer timer = new Timer();
-        TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-                Chaos chaos = new Chaos();
-                Random random = new Random();
-                int random_service = random.nextInt(4) + 1;
-                int random_tache;
-                switch (random_service) {
-                    case 1: //CONSEIL
-                        System.out.println("CONSEIL : ");
-                        random_tache = random.nextInt(2) + 1;
-                        switch (random_tache) {
-                            case 1:
-                                ((ConseilKH) chaos.communiquerKH().getConseilKH()).conseilSansRaison();
-                                break;
-                            case 2:
-                                ((ConseilKH) chaos.communiquerKH().getConseilKH()).conseilFonctionDemande();
-                                break;
-                            default:
-                                break;
-                        }
+
+        Chaos chaos = new Chaos();
+        Random random = new Random();
+        int random_service = random.nextInt(4) + 1;
+        int random_tache;
+        switch (random_service) {
+            case 1: //CONSEIL
+                System.out.println("CONSEIL : ");
+                random_tache = random.nextInt(2) + 1;
+                switch (random_tache) {
+                    case 1:
+                        ((ConseilKH) chaos.communiquerKH().getConseilKH()).conseilSansRaison();
                         break;
-                    case 2: //ECOUTE
-                        System.out.println("- ECOUTE : ");
-                        random_tache = random.nextInt(3) + 1;
-                        switch (random_tache) {
-                            case 1:
-                                ((EcouteKH) chaos.communiquerKH().getEcouteKH()).ecouterSansReponse();
-                                break;
-                            case 2:
-                                ((EcouteKH) chaos.communiquerKH().getEcouteKH()).ecouterRepondreConseil();
-                                break;
-                            case 3:
-                                ((EcouteKH) chaos.communiquerKH().getEcouteKH()).ecouterRealiserMiracle();
-                                break;
-                            default:
-                                break;
-                        }
-                        break;
-                    case 3: //MIRACLE
-                        System.out.println("- MIRACLE : ");
-                        ((MiracleKH) chaos.communiquerKH().getMiracleKH()).RealiserMiracle();
-                        break;
-                    case 4: //CATACLYSME
-                        System.out.println("- CATACLYSME : ");
-                        random_tache = random.nextInt(3) + 1;
-                        switch (random_tache) {
-                            case 1:
-                                ((CataclysmeKH) chaos.communiquerKH().getCataclysmeKH()).RealiserCataclysmeSansRaison();
-                                break;
-                            case 2:
-                                ((CataclysmeKH) chaos.communiquerKH().getCataclysmeKH()).RealiserCataclysmeFonctionDemande();
-                                break;
-                            case 3:
-                                ((CataclysmeKH) chaos.communiquerKH().getCataclysmeKH()).RealiserCataclysmeEtMiracle();
-                                break;
-                            default:
-                                break;
-                        }
+                    case 2:
+                        ((ConseilKH) chaos.communiquerKH().getConseilKH()).conseilFonctionDemande();
                         break;
                     default:
                         break;
                 }
-                System.out.println();
-            }
-
-
-        };
-        timer.scheduleAtFixedRate(task, 0, 750);//wait 0 ms before doing the action and do it every 1000ms (1second)
+                break;
+            case 2: //ECOUTE
+                System.out.println("- ECOUTE : ");
+                random_tache = random.nextInt(3) + 1;
+                switch (random_tache) {
+                    case 1:
+                        ((EcouteKH) chaos.communiquerKH().getEcouteKH()).ecouterSansReponse();
+                        break;
+                    case 2:
+                        ((EcouteKH) chaos.communiquerKH().getEcouteKH()).ecouterRepondreConseil();
+                        break;
+                    case 3:
+                        ((EcouteKH) chaos.communiquerKH().getEcouteKH()).ecouterRealiserMiracle();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case 3: //MIRACLE
+                System.out.println("- MIRACLE : ");
+                ((MiracleKH) chaos.communiquerKH().getMiracleKH()).RealiserMiracle();
+                break;
+            case 4: //CATACLYSME
+                System.out.println("- CATACLYSME : ");
+                random_tache = random.nextInt(3) + 1;
+                switch (random_tache) {
+                    case 1:
+                        ((CataclysmeKH) chaos.communiquerKH().getCataclysmeKH()).RealiserCataclysmeSansRaison();
+                        break;
+                    case 2:
+                        ((CataclysmeKH) chaos.communiquerKH().getCataclysmeKH()).RealiserCataclysmeFonctionDemande();
+                        break;
+                    case 3:
+                        ((CataclysmeKH) chaos.communiquerKH().getCataclysmeKH()).RealiserCataclysmeEtMiracle();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            default:
+                break;
+        }
+        System.out.println();
     }
-
 }

@@ -73,7 +73,7 @@ public class Cegorach {
                         ((EcouteCG) harlequins.communiquerCG().getEcouteCG()).ecouterRepondreConseil();
                         break;
                     case 3:
-                        ((EcouteED) harlequins.communiquerCG().getEcouteCG()).ecouterRealiserMiracle();
+                        ((EcouteCG) harlequins.communiquerCG().getEcouteCG()).ecouterRealiserMiracle();
                         break;
                     default:
                         break;

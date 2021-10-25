@@ -15,7 +15,7 @@ public class Warp {
     Cegorach cg;
 
     Service [] tabServiceKH;
-    Coloknee kh;
+    Khorne kh;
 
     Service [] tabServiceCN;
     Coloknee cn;
@@ -39,14 +39,14 @@ public class Warp {
 
         cg = Cegorach.getInstance();
 
-        /*
+
         tabServiceKH = new Service [4];
         tabServiceKH[0] = new ConseilKH();
         tabServiceKH[1] = new EcouteKH();
         tabServiceKH[2] = new MiracleKH();
         tabServiceKH[3] = new CataclysmeKH();
 
-        kh = Cegorach.getInstance(); */
+        kh = Khorne.getInstance();
 
         tabServiceCN = new Service [4];
         tabServiceCN[0] = new ConseilCN();
@@ -74,10 +74,15 @@ public class Warp {
             @Override
             public void run() {
                 EmpereurDieu ed = EmpereurDieu.getInstance();
+                System.out.print("Psykers : ");
                 ed.runED();
+                System.out.print("Harlequins : ");
                 cg.runCG();
-                /*kh.runKH();*/
+                System.out.print("Chaos : ");
+                kh.runKH();
+                System.out.print("Farfadets : ");
                 cn.runCN();
+                System.out.println("");
             }
         };
         timer.scheduleAtFixedRate(task, 0,2000);//wait 0 ms before doing the action and do it every 1000ms (1second)
