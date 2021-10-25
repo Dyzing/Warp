@@ -11,14 +11,15 @@ public class Warp {
     Service [] tabServiceED; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
     EmpereurDieu ed;
 
-    Service [] tabServiceCG; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
+    Service [] tabServiceCG;
     Cegorach cg;
 
-    Service [] tabServiceCN; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
+    Service [] tabServiceKH;
+    Coloknee kh;
+
+    Service [] tabServiceCN;
     Coloknee cn;
 
-    Service [] tabServiceKH; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
-    Khorne kh;
 
     public Warp()
     {
@@ -35,6 +36,26 @@ public class Warp {
         tabServiceCG[1] = new EcouteCG();
         tabServiceCG[2] = new MiracleCG();
         tabServiceCG[3] = new CataclysmeCG();
+
+        cg = Cegorach.getInstance();
+
+        /*
+        tabServiceKH = new Service [4];
+        tabServiceKH[0] = new ConseilKH();
+        tabServiceKH[1] = new EcouteKH();
+        tabServiceKH[2] = new MiracleKH();
+        tabServiceKH[3] = new CataclysmeKH();
+
+        kh = Cegorach.getInstance(); */
+
+        tabServiceCN = new Service [4];
+        tabServiceCN[0] = new ConseilCN();
+        tabServiceCN[1] = new EcouteCN();
+        tabServiceCN[2] = new MiracleCN();
+        tabServiceCN[3] = new CataclysmeCN();
+
+        cn = Coloknee.getInstance();
+
     }
 
 
@@ -55,6 +76,8 @@ public class Warp {
                 EmpereurDieu ed = EmpereurDieu.getInstance();
                 ed.runED();
                 cg.runCG();
+                /*kh.runKH();*/
+                cn.runCN();
             }
         };
         timer.scheduleAtFixedRate(task, 0,2000);//wait 0 ms before doing the action and do it every 1000ms (1second)
