@@ -7,6 +7,7 @@ import java.util.TimerTask;
 public class EmpereurDieu {
 
     private static EmpereurDieu instance_ED = null;
+    static int  tour = 0;
 
     EmpereurDieu()
     {};
@@ -51,9 +52,11 @@ public class EmpereurDieu {
             @Override
             public void run() {
                 Psykers pysker = new Psykers();
+                System.out.print("tour : " + tour + " ");
                 ((ConseilED) pysker.communiquerED().getConseilED()).conseilSansRaison();
+                tour++;
             }
         };
-        timer.scheduleAtFixedRate(task, 0,2000);//wait 0 ms before doing the action and do it every 1000ms (1second)
+        timer.scheduleAtFixedRate(task, 0,500);//wait 0 ms before doing the action and do it every 1000ms (1second)
     }
 }

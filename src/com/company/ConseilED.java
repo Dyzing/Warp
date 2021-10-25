@@ -28,9 +28,6 @@ public class ConseilED extends Service implements ConseilInterface {
 
     @Override
     public void conseilFonctionDemande() {
-<<<<<<< Updated upstream
-=======
-
         Random random = new Random();
         int random_value = random.nextInt(3) + 1; switch (random_value) {
             case 1:
@@ -48,7 +45,5 @@ public class ConseilED extends Service implements ConseilInterface {
             default:
                 break;
         }
-
->>>>>>> Stashed changes
     }
 }
