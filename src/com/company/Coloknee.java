@@ -40,7 +40,7 @@ public class Coloknee {
         return ((CataclysmeCN) Warp.getInstance().tabServiceCN[3]);
     }
 
-    public void runED() {
+    public void runCN() {
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {
             @Override
