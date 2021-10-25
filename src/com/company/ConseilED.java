@@ -1,4 +1,4 @@
 package com.company;
 
-public class ConseilED {
+public class ConseilED extends Service{
 }
