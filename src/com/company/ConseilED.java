@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public abstract class ConseilED extends Service implements ConseilInterface {
+public class ConseilED extends Service implements ConseilInterface {
 
 
     @Override
