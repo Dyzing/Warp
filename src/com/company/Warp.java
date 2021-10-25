@@ -1,34 +1,46 @@
 package com.company;
 
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Warp {
 
-    EmpereurDieu [] tabServiceED; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
+    private static Warp instance_warp = null;
+    Service [] tabServiceED; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
+    EmpereurDieu ed;
 
     public Warp()
     {
-        tabServiceED = new EmpereurDieu [4];
+        tabServiceED = new Service [4];
+        tabServiceED[0] = new ConseilED();
+        tabServiceED[1] = new EcouteED();
+        tabServiceED[2] = new MiracleED();
+        tabServiceED[3] = new CataclysmeED();
+
+        ed = EmpereurDieu.getInstance();
     }
 
-    public EmpereurDieu getConseilED()
+
+    public static Warp getInstance()
     {
-        return tabServiceED[0];
+        if(instance_warp == null)
+            instance_warp = new Warp();
+
+        return instance_warp;
     }
 
-    public EmpereurDieu getEcouteED()
+    public void run()
     {
-        return tabServiceED[1];
-    }
-
-    public EmpereurDieu getMiracleED()
-    {
-        return tabServiceED[2];
-    }
-
-    public EmpereurDieu getCataclysmeED()
-    {
-        return tabServiceED[3];
+        Timer timer = new Timer();
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                EmpereurDieu ed = EmpereurDieu.getInstance();
+                ed.runED();
+            }
+        };
+        timer.scheduleAtFixedRate(task, 0,2000);//wait 0 ms before doing the action and do it every 1000ms (1second)
     }
 
 }

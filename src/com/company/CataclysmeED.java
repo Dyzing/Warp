@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public abstract class CataclysmeED extends Service implements  CataclysmeInterface{
+public class CataclysmeED extends Service implements  CataclysmeInterface{
 
     @Override
     public void RealiserCataclysmeSansRaison() {

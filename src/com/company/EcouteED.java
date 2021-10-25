@@ -3,7 +3,7 @@ package com.company;
 
 import java.util.Random;
 
-public abstract class EcouteED extends Service implements EcouteInterface {
+public class EcouteED extends Service implements EcouteInterface {
 
     @Override
     public void ecouterRealiserMiracle() {

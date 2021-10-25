@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public abstract class MiracleED extends Service implements MiracleInterface{
+public class MiracleED extends Service implements MiracleInterface{
 
     @Override
     public void RealiserMiracle() {

@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public abstract class ConseilED extends Service implements ConseilInterface {
+public class ConseilED extends Service implements ConseilInterface {
 
 
     @Override
@@ -31,7 +31,8 @@ public abstract class ConseilED extends Service implements ConseilInterface {
 
 
         Random random = new Random();
-        int random_value = random.nextInt(3) + 1; switch (random_value) {
+        int random_value = random.nextInt(3) + 1;
+        switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDEED1);
                 System.out.println(Constantes.CONSEILED1);
@@ -47,6 +48,5 @@ public abstract class ConseilED extends Service implements ConseilInterface {
             default:
                 break;
         }
-
     }
 }

@@ -4,11 +4,17 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Psykers {
 
-    public static AtomicInteger genId = new AtomicInteger();
-    private int id;
+    public static int id_Psykers;
 
-    public Psykers(int id) {
-        this.id = genId.getAndIncrement();
+    public void Psykers()
+    {
+        ++id_Psykers;
+    }
+
+
+    EmpereurDieu communiquerED()
+    {
+        return EmpereurDieu.getInstance();
     }
 
 }
