@@ -62,17 +62,17 @@ public class EcouteKH extends Service implements EcouteInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDEKH1);
-                System.out.print("Khorne : ");
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.CONSEILKH1);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDEKH2);
-                System.out.print("Khorne : ");
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.CONSEILKH2);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDEKH3);
-                System.out.print("Khorne : ");
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.CONSEILKH3);
                 break;
             default:

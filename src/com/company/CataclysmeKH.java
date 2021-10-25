@@ -11,12 +11,15 @@ public class CataclysmeKH extends Service implements CataclysmeInterface{
 
         switch (random_value) {
             case 1:
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.CATACLYSMEKH1);
                 break;
             case 2:
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.CATACLYSMEKH2);
                 break;
             case 3:
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.CATACLYSMEKH3);
                 break;
             default:
@@ -32,14 +35,17 @@ public class CataclysmeKH extends Service implements CataclysmeInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDEKH4);
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.CATACLYSMEKH1);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDEKH5);
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.CATACLYSMEKH2);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDEKH6);
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.CATACLYSMEKH3);
                 break;
             default:
@@ -55,14 +61,17 @@ public class CataclysmeKH extends Service implements CataclysmeInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.CATACLYSMEKH1);
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.MIRACLEKH1);
                 break;
             case 2:
                 System.out.println(Constantes.CATACLYSMEKH2);
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.MIRACLEKH2);
                 break;
             case 3:
                 System.out.println(Constantes.CATACLYSMEKH3);
+                System.out.print("-Khorne : ");
                 System.out.println(Constantes.MIRACLEKH3);
                 break;
             default:
