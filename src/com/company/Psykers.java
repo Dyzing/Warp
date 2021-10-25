@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Psykers {
 
     public static int id_Psykers;

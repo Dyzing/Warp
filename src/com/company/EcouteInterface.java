@@ -1,6 +1,6 @@
 package com.company;
 
-public interface EcouteInterface {
+public abstract interface EcouteInterface {
 
     void ecouterSansReponse();
     void ecouterRepondreConseil();
