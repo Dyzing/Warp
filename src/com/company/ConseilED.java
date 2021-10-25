@@ -22,8 +22,6 @@ public abstract class ConseilED extends Service implements ConseilInterface {
     }
 
     @Override
-    public void conseilFonctionDemande(String demande) {
-
-        if
+    public void conseilFonctionDemande() {
     }
 }

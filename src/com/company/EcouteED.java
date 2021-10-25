@@ -1,4 +1,4 @@
 package com.company;
 
-public class EcouteED {
+public class EcouteED extends Service {
 }

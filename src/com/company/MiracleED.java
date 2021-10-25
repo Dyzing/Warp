@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public abstract class MiracleED implements MiracleInterface{
+public abstract class MiracleED extends Service implements MiracleInterface{
 
     @Override
     public void RealiserMiracle() {
@@ -12,10 +12,15 @@ public abstract class MiracleED implements MiracleInterface{
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.MIRACLEED1);
+                break;
             case 2:
                 System.out.println(Constantes.MIRACLEED2);
+                break;
             case 3:
                 System.out.println(Constantes.MIRACLEED3);
+                break;
+            default:
+                break;
         }
     }
 }
