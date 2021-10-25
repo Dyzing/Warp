@@ -10,11 +10,15 @@ public class Warp {
 
     Service [] tabServiceED; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
     EmpereurDieu ed;
+
     Service [] tabServiceCG; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
     Cegorach cg;
 
     Service [] tabServiceCN; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
     Coloknee cn;
+
+    Service [] tabServiceKH; // 0 : Conseil | 1 : Ecoute | 2 : Miracle | 3 : Cataclysme
+    Khorne kh;
 
     public Warp()
     {
@@ -50,7 +54,7 @@ public class Warp {
             public void run() {
                 EmpereurDieu ed = EmpereurDieu.getInstance();
                 ed.runED();
-                cg.runCG()
+                cg.runCG();
             }
         };
         timer.scheduleAtFixedRate(task, 0,2000);//wait 0 ms before doing the action and do it every 1000ms (1second)
