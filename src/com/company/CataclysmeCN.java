@@ -11,15 +11,15 @@ public class CataclysmeCN extends Service implements CataclysmeInterface {
 
         switch (random_value) {
             case 1:
-                System.out.print("_Coloknee : ");
+                System.out.print("-Coloknee : ");
                 System.out.println(Constantes.CATACLYSMECN1);
                 break;
             case 2:
-                System.out.print("_Coloknee : ");
+                System.out.print("-Coloknee : ");
                 System.out.println(Constantes.CATACLYSMECN2);
                 break;
             case 3:
-                System.out.print("_Coloknee : ");
+                System.out.print("-Coloknee : ");
                 System.out.println(Constantes.CATACLYSMECN3);
                 break;
             default:
@@ -35,17 +35,17 @@ public class CataclysmeCN extends Service implements CataclysmeInterface {
         switch (random_value) {
             case 1:
                 System.out.println(Constantes.DEMANDECN4);
-                System.out.print("_Coloknee : ");
+                System.out.print("-Coloknee : ");
                 System.out.println(Constantes.CATACLYSMECN1);
                 break;
             case 2:
                 System.out.println(Constantes.DEMANDECN5);
-                System.out.print("_Coloknee : ");
+                System.out.print("-Coloknee : ");
                 System.out.println(Constantes.CATACLYSMECN2);
                 break;
             case 3:
                 System.out.println(Constantes.DEMANDECN6);
-                System.out.print("_Coloknee : ");
+                System.out.print("-Coloknee : ");
                 System.out.println(Constantes.CATACLYSMECN3);
                 break;
             default:

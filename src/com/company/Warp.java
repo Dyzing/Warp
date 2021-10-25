@@ -74,15 +74,17 @@ public class Warp {
             @Override
             public void run() {
                 EmpereurDieu ed = EmpereurDieu.getInstance();
-                System.out.print("Psykers : ");
+                System.out.println("--------------------------------------------------");
+                System.out.print("-Psykers : ");
                 ed.runED();
-                System.out.print("Harlequins : ");
+                System.out.print("-Harlequins : ");
                 cg.runCG();
-                System.out.print("Chaos : ");
+                System.out.print("-Chaos : ");
                 kh.runKH();
-                System.out.print("Farfadets : ");
+                System.out.print("-Farfadets : ");
                 cn.runCN();
                 System.out.println("");
+                System.out.println("--------------------------------------------------");
             }
         };
         timer.scheduleAtFixedRate(task, 0,2000);//wait 0 ms before doing the action and do it every 1000ms (1second)
