@@ -8,7 +8,7 @@ import java.util.TimerTask;
 public class EmpereurDieu {
 
     private static EmpereurDieu instance_ED = null;
-    static int tour = 0;
+
 
     EmpereurDieu() {
     }
@@ -45,7 +45,6 @@ public class EmpereurDieu {
     public void runED() {
 
         Psykers pysker = new Psykers();
-        System.out.print("tour : " + tour + " ");
         Random random = new Random();
         int random_service = random.nextInt(4) + 1;
         int random_tache;
@@ -105,10 +104,6 @@ public class EmpereurDieu {
             default:
                 break;
         }
-        tour++;
         System.out.println();
     }
-
-
-
 }

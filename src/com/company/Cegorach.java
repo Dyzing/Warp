@@ -7,7 +7,7 @@ import java.util.TimerTask;
 public class Cegorach {
 
     private static Cegorach instance_CG = null;
-    static int tour = 0;
+
 
     Cegorach() {
     }
@@ -44,7 +44,6 @@ public class Cegorach {
     public void runCG() {
 
         Harlequins harlequins = new Harlequins();
-        System.out.print("tour : " + tour + " ");
         Random random = new Random();
         int random_service = random.nextInt(4) + 1;
         int random_tache;
@@ -104,7 +103,7 @@ public class Cegorach {
             default:
                 break;
         }
-        tour++;
+
         System.out.println();
     }
 
