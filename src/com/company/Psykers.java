@@ -11,6 +11,7 @@ public class Psykers {
         ++id_Psykers;
     }
 
+
     EmpereurDieu communiquerED()
     {
         return EmpereurDieu.getInstance();
