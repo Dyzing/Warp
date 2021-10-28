@@ -48,7 +48,7 @@ public class ConseilCN extends Service implements ConseilInterface{
                 System.out.println(Constantes.CONSEILCN2);
                 break;
             case 3:
-                System.out.println(Constantes.DEMANDEED3);
+                System.out.println(Constantes.DEMANDECN3);
                 System.out.print("-Coloknee : ");
                 System.out.println(Constantes.CONSEILCN3);
                 break;
