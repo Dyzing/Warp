@@ -94,8 +94,7 @@ public class Warp {
             @Override
             public void run() {
                 System.out.println("-----------------------------------------------------------\n");
-                System.out.print("Psykers : ");
-                ed = EmpereurDieu.getInstance(); // Protection au cas où run() est appelé avant que Warp soit construit (et construise alors les 4 divinité)
+                System.out.print("-Psykers : ");
                 ed.runED();
                 System.out.print("-Harlequins : ");
                 cg = Cegorach.getInstance();
