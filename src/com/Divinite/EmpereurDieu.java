@@ -26,19 +26,19 @@ public class EmpereurDieu {
     }
 
     public Service getConseilED() {
-        return ((ConseilED) Warp.getInstance().getTabServiceED()[0]);
+        return Warp.getInstance().getTabServiceED()[0];
     }
 
     public Service getEcouteED() {
-        return ((EcouteED) Warp.getInstance().getTabServiceED()[1]);
+        return Warp.getInstance().getTabServiceED()[1];
     }
 
     public Service getMiracleED() {
-        return ((MiracleED) Warp.getInstance().getTabServiceED()[2]);
+        return Warp.getInstance().getTabServiceED()[2];
     }
 
     public Service getCataclysmeED() {
-        return ((CataclysmeED) Warp.getInstance().getTabServiceED()[3]);
+        return Warp.getInstance().getTabServiceED()[3];
     }
 
     public void runED() {

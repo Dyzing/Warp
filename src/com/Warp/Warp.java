@@ -95,12 +95,16 @@ public class Warp {
             public void run() {
                 System.out.println("-----------------------------------------------------------\n");
                 System.out.print("Psykers : ");
+                ed = EmpereurDieu.getInstance(); // Protection au cas où run() est appelé avant que Warp soit construit (et construise alors les 4 divinité)
                 ed.runED();
                 System.out.print("-Harlequins : ");
+                cg = Cegorach.getInstance();
                 cg.runCG();
                 System.out.print("-Chaos : ");
+                kh = Khorne.getInstance();
                 kh.runKH();
                 System.out.print("-Farfadets : ");
+                cn = Coloknee.getInstance();
                 cn.runCN();
 
                 System.out.print("-------------------------------------------------------------");
