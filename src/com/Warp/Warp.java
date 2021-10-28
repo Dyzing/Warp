@@ -94,7 +94,7 @@ public class Warp {
             @Override
             public void run() {
                 System.out.println("-----------------------------------------------------------\n");
-                System.out.print("Psykers : ");
+                System.out.print("-Psykers : ");
                 ed.runED();
                 System.out.print("-Harlequins : ");
                 cg.runCG();
