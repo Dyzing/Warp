@@ -23,19 +23,19 @@ public class Coloknee {
     }
 
     public Service getConseilCN() {
-        return ((ConseilCN) Warp.getInstance().getTabServiceCN()[0]);
+        return Warp.getInstance().getTabServiceCN()[0];
     }
 
     public Service getEcouteCN() {
-        return ((EcouteCN) Warp.getInstance().getTabServiceCN()[1]);
+        return Warp.getInstance().getTabServiceCN()[1];
     }
 
     public Service getMiracleCN() {
-        return ((MiracleCN) Warp.getInstance().getTabServiceCN()[2]);
+        return Warp.getInstance().getTabServiceCN()[2];
     }
 
     public Service getCataclysmeCN() {
-        return ((CataclysmeCN) Warp.getInstance().getTabServiceCN()[3]);
+        return Warp.getInstance().getTabServiceCN()[3];
     }
 
     public void runCN() {

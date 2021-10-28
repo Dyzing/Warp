@@ -25,19 +25,19 @@ public class Khorne {
     }
 
     public Service getConseilKH() {
-        return ((ConseilKH) Warp.getInstance().getTabServiceKH()[0]);
+        return Warp.getInstance().getTabServiceKH()[0];
     }
 
     public Service getEcouteKH() {
-        return ((EcouteKH) Warp.getInstance().getTabServiceKH()[1]);
+        return Warp.getInstance().getTabServiceKH()[1];
     }
 
     public Service getMiracleKH() {
-        return ((MiracleKH) Warp.getInstance().getTabServiceKH()[2]);
+        return Warp.getInstance().getTabServiceKH()[2];
     }
 
     public Service getCataclysmeKH() {
-        return ((CataclysmeKH) Warp.getInstance().getTabServiceKH()[3]);
+        return Warp.getInstance().getTabServiceKH()[3];
     }
 
     public void runKH() {

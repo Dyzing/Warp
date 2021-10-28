@@ -97,10 +97,13 @@ public class Warp {
                 System.out.print("-Psykers : ");
                 ed.runED();
                 System.out.print("-Harlequins : ");
+                cg = Cegorach.getInstance();
                 cg.runCG();
                 System.out.print("-Chaos : ");
+                kh = Khorne.getInstance();
                 kh.runKH();
                 System.out.print("-Farfadets : ");
+                cn = Coloknee.getInstance();
                 cn.runCN();
 
                 System.out.print("-------------------------------------------------------------");

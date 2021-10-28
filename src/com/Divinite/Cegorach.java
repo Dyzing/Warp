@@ -26,19 +26,19 @@ public class Cegorach {
     }
 
     public Service getConseilCG() {
-        return ((ConseilCG) Warp.getInstance().getTabServiceCG()[0]);
+        return Warp.getInstance().getTabServiceCG()[0];
     }
 
     public Service getEcouteCG() {
-        return ((EcouteCG) Warp.getInstance().getTabServiceCG()[1]);
+        return Warp.getInstance().getTabServiceCG()[1];
     }
 
     public Service getMiracleCG() {
-        return ((MiracleCG) Warp.getInstance().getTabServiceCG()[2]);
+        return Warp.getInstance().getTabServiceCG()[2];
     }
 
     public Service getCataclysmeCG() {
-        return ((CataclysmeCG) Warp.getInstance().getTabServiceCG()[3]);
+        return Warp.getInstance().getTabServiceCG()[3];
     }
 
     public void runCG() {
